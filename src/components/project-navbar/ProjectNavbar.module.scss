@@ -1,0 +1,73 @@
+.ProjectNavbar {
+    top: 0px;
+    left: 64px;
+    height: 100vh;
+    width: 230px;
+    padding: 0px 16px 24px;
+    background: rgb(244, 245, 247);
+    border-right: 1px solid rgb(223, 225, 230);
+    overflow: hidden auto;
+    position: relative;
+}
+
+.NavbarHeader {
+    display: flex;
+    padding: 24px 4px
+}
+
+.ProjectName {
+    color: rgb(23, 43, 77);
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-weight: normal;
+}
+
+.ProjectType {
+    color: rgb(94, 108, 132);
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.Separator {
+    margin-top: 17px;
+    padding-top: 18px;
+    border-top: 1px solid rgb(193, 199, 208);
+}
+
+.ProjectNav {
+    display: flex;
+    align-items: center;
+    font-size: 14.7px;
+    padding-top: 2px;
+    text-decoration: none;
+    gap: 15px;
+    font-weight: normal;
+    padding: 8px 12px;
+    color: rgb(94, 108, 132); 
+}
+
+.Active {
+    color: rgb(0, 82, 204);
+    background: rgb(235, 236, 240);
+
+    & .GearIcon path{
+        stroke:rgb(0, 82, 204);
+    }
+}
+
+.GearIcon {
+    font-size: 24px;   
+    & path {
+        stroke:#172b4d;
+        fill: none;
+        stroke-width: 35;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .ProjectNavbar {
+        display: none;
+    }
+  }

@@ -1,0 +1,100 @@
+.KanbanBoard {
+    padding: 25px;
+    color: rgb(94, 108, 132);
+    position: relative;
+    left: 80px;
+}
+
+.Header {
+    margin-top: 6px;
+    font-size: 24px;
+    font-weight: normal;
+    color: rgb(23, 43, 77);
+}
+
+.IssueActions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    margin-top: 24px;
+    & input {
+        width: 160px;
+        height: 32px;
+        padding: 0px 7px 0px 32px;
+        border-radius: 3px;
+        border: 1px solid rgb(223, 225, 230);
+        color: rgb(94, 108, 132);
+        background: rgb(244, 245, 247);
+        transition: background 0.1s ease 0s;
+        font-family: CircularStdBook;
+        font-weight: normal;
+        font-size: 15px;
+
+        &:hover {
+            background: rgb(235, 236, 240);
+        }
+
+        &:focus {
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(76, 154, 255);
+        }
+    }
+}
+
+.SearchIcon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.Avatar {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(235, 236, 240);
+    box-shadow: 0px 0px 0px 2px #fff;
+    position: relative;
+
+    cursor: pointer;
+    &:hover {
+        top: -3px;
+        z-index: 999;
+    }
+}
+
+.Action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 0px 12px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all 0.1s ease 0s;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14.5px;
+    background: rgb(255, 255, 255);
+    color: rgb(66, 82, 110);
+    font-weight: normal;
+
+
+    &:hover {
+        background: #f4f5f7;
+        border-radius: 3px;
+    }
+}
+
+.Issues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
